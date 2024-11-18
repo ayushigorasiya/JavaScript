@@ -1,0 +1,68 @@
+<!-- .Write a JavaScript program to find which number is greter in 3 numbers using nested if else.(using all function) -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QA-7_1</title>
+</head>
+
+<body>
+    <script>
+        alert(`JavaScript program to find which number is greter in 3 numbers using nested if else.(using all function)`);
+        alert(`Take Nothing Return Nothing`);
+        // Take Nothing Return Nothing
+
+        function greter() {
+
+            if (a > b) {
+                if (a > c) {
+                    if (a > d) {
+                        document.write(`<h1>A is Bigest</h1>`);
+                    }
+                    else {
+                        document.write(`<h1>D is Bigest</h1>`);
+                    }
+                }
+                else {
+                    if (c > d) {
+                        document.write(`<h1>C is Bigest</h1>`);
+                    }
+                    else {
+                        document.write(`<h1>D is Bigest</h1>`);
+                    }
+                }
+            }
+            else {
+
+                if (b > c) {
+                    if (b > d) {
+                        document.write(`<h1>B is Bigest</h1>`);
+                    }
+                    else {
+                        document.write(`<h1>D is Bigest</h1>`);
+                    }
+                }
+                else {
+                    if (c > d) {
+                        document.write(`<h1>C is Bigest</h1>`);
+                    }
+                    else {
+                        document.write(`<h1>D is Bigest</h1>`);
+                    }
+                }
+            }
+        }
+        var a = parseInt(prompt(` Enter The Value Of A:-`));
+        var b = parseInt(prompt(` Enter The Value Of B:-`));
+        var c = parseInt(prompt(` Enter The Value Of C:-`));
+        var d = parseInt(prompt(` Enter The Value Of D:-`));
+
+        greter();
+    </script>
+
+</body>
+
+</html>

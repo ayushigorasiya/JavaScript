@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qa-11</title>
+</head>
+
+<body>
+
+    <script>
+        alert(` array decending  order sort.`);
+
+        var size = parseInt(prompt(`Enter Array Size :-`));
+        const array = [size];
+        document.write(`<h2>array element</h2>`);
+
+        for (var i = 0; i < size; i++) {
+            array[i] = parseInt(prompt(`Enter Element ${i + 1} :-`));
+            document.write(`<h2> ${array[i]}</h2>`);
+
+        }
+        document.write(`<h2>decending  order</h2>`);
+
+        let ans = array.sort((a, b) => (b - a));
+        document.write(`<h2> ${ans}</h2>`);
+
+    </script>
+
+</body>
+
+</html>

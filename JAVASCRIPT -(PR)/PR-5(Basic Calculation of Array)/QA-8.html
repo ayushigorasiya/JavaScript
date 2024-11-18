@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QA-8</title>
+</head>
+
+<body>
+    <script>
+        alert("All Element Sum.....");
+
+        var size = parseInt(prompt(`Enter Array Size :-`));
+        const array = [size];
+        var sum = 0;
+
+        document.write(`<h2>Element in Array</h2>`);
+
+        for (var i = 0; i < size; i++) {
+            array[i] = parseInt(prompt(`Enter Element ${i + 1} :-`));
+            document.write(`<h2> ${array[i]}</h2>`);
+
+        }
+        document.write(`<h2>Sum of All Element ......!</h2>`);
+        for (var i = 0; i < size; i++) {
+            sum = sum + array[i];
+
+        }
+        document.write(`<h2>Sum of All Element is ${sum}</h2>`);
+    </script>
+
+</body>
+
+</html>

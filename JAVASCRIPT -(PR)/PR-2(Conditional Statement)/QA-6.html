@@ -1,0 +1,61 @@
+<!--Write a JavaScript program to input marks of five subjects Physics, Chemistry, Biology,
+ Mathematics and Computer. Calculate percentage and grade according to following
+
+
+Percentage >= 90% : Grade A
+Percentage >= 80% : Grade B
+Percentage >= 70% : Grade C
+Percentage >= 60% : Grade D 
+Percentage >= 50% : Grade E
+Percentage >= 40% : Grade F-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QA-6</title>
+</head>
+
+<body>
+    <hr>
+    <hr>
+    <script>
+        var physics = parseInt(prompt("Enter marks for Physics:"));
+        var chemistry = parseInt(prompt("Enter marks for Chemistry:"));
+        var biology = parseInt(prompt("Enter marks for Biology:"));
+        var mathematics = parseInt(prompt("Enter marks for Mathematics:"));
+        var computer = parseInt(prompt("Enter marks for Computer:"));
+
+        var total = physics + chemistry + biology + mathematics + computer;
+
+        var percentage = (total / 5);
+
+
+
+        if (percentage >= 90 && percentage < 100) {
+            document.write(`Precentage :- ${percentage}<h1>Your Grade Is A..!</h1>`);
+        } else if (percentage >= 80 && percentage <= 89) {
+            document.write(`Precentage :-${percentage}<h1>Your Grade Is B..!</h1>`);
+        } else if (percentage >= 70 && percentage <= 79) {
+            document.write(`Precentage :-${percentage}<h1>Your Grade Is C..!</h1>`);;
+        } else if (percentage >= 60 && percentage <= 69) {
+            document.write(`Precentage :-${percentage}<h1>Your Grade Is D..!</h1>`);
+        } else if (percentage >= 50 && percentage <= 59) {
+            document.write(`Precentage :-${percentage}<h1>Your Grade Is E..!</h1>`);
+        } else if (percentage >= 40 && percentage <= 49) {
+            document.write(`Precentage :-${percentage}<h1>Your Grade Is F..!</h1>`);
+        } else {
+            document.write(`Precentage :-${percentage}<h1>Sorry You Are Failed..!</h1>`);
+        }
+
+
+
+    </script>
+    <hr>
+    <hr>
+
+</body>
+
+</html>

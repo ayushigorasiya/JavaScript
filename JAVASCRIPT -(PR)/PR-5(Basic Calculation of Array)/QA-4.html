@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QA-1</title>
+</head>
+
+<body>
+    <h2>Duplicate elements in array.</h2>
+    <h4>
+        User Input
+    </h4>
+    <script>
+        var size = parseInt(prompt(`Enter The Element Of Size :-`));
+        var array = [size];
+
+
+
+        for (var i = 0; i < size; i++) {
+            array[i] = parseInt(prompt(`Enter Your Element ${i + 1} :-`));
+
+            document.write(`<h2>${array[i]}</h2>`);
+        }
+
+        document.write(`<h2>Duplicate Element in Array</h2>`);
+        for (var i = 0; i < size; i++) {
+            for (var j = i + 1; j < size; j++) {
+                if (array[i] == array[j]) {
+                    document.write(`<h2>${array[i]}</h2>`);
+                }
+            }
+        }
+    </script>
+
+</body>
+
+</html>

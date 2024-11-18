@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QA-13</title>
+</head>
+<body>
+    <hr>
+    <hr>
+    <script>
+        var n = parseInt(prompt("Enter Any Number :"));
+        var next, first = 0, second = 1;
+        for (var i = 0; i <= n; i++) {
+            if (i <= 1) {
+                next = i;
+            }
+            else {
+                next = first + second;
+                first = second;
+                second = next;
+            }
+            document.write(`<h2>${next}</h2>`);
+        }
+
+    </script>
+    <hr>
+    <hr>
+    
+</body>
+</html>

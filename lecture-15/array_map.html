@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>array.map()</title>
+</head>
+
+<body>
+    <script>
+
+        const arr = [10, 20, 30, 40, 50];
+        const ans = arr.map((v, i) => {
+            document.write(`<h1> ${v} [${i}]</h1>`);
+            return v * v;
+
+        }
+        );
+        document.write(`<h1> ${ans}</h1>`);
+
+    </script>
+
+</body>
+
+</html>

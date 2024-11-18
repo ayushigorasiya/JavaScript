@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nested Function</title>
+</head>
+
+<body>
+    <script>
+        function main() {
+            sum();
+            minus();
+            multiply();
+            division();
+            modual();
+        }
+        let a = parseInt(prompt(`Enter The Value Of A:-`));
+        let b = parseInt(prompt(`Enter The Value Of B:-`));
+        main();
+        function sum() {
+            document.write(`<h1>Sum Is (+):- ${a + b}</h1>`);
+        }
+        function minus() {
+            document.write(`<h1>Minus Is (-) :- ${a - b}</h1>`);
+        }
+        function multiply() {
+            document.write(`<h1>Multiply Is (*):- ${a * b}</h1>`);
+        }
+        function division() {
+            document.write(`<h1>Division Is (/):- ${a / b}</h1>`);
+        }
+        function modual() {
+            document.write(`<h1>modual Is (%):- ${a % b}</h1>`);
+        }
+    </script>
+
+</body>
+
+</html>

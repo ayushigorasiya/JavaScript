@@ -1,0 +1,32 @@
+<!-- Write a JavaScript program to decide that you eligible for voting? (using all function) -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QA-10_1</title>
+</head>
+
+<body>
+
+    <script>
+        alert(`JavaScript program to decide that you eligible for voting? (using all function)`);
+        alert(`Take Something Return Something`);
+        // Take Something Return Something
+        function voting(age) {
+            if (age >= 18) {
+                return ":) You Are Eligible For Voting";
+            }
+            else {
+                return ":( You Are Not Eligible For Voting";
+            }
+
+        }
+        var age = parseInt(prompt(`Enter The your Age :-`));
+        document.write("<h1>" + voting(age) + "</h1>");
+    </script>
+
+</body>
+
+</html>

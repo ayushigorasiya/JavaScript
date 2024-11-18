@@ -1,0 +1,49 @@
+<!-- Write a JavaScript program to find which number is greter in 4 numbers using ledder if else. (using no return with parameter function) -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QA-4</title>
+</head>
+
+<body>
+    <script>
+        alert(`JavaScript program to find which number is greter in 4 numbers using ledder if else. (using no return with parameter function)`);
+
+        function ladder(a, b, c, d, e) {
+
+
+
+            if (a > b && a > c && a > d && a > e) {
+                document.write(`<h1>A is bigest </h1>`);
+            }
+            else if (b > a && b > c && b > d && b > e) {
+                document.write(`<h1>B is bigest </h1>`);
+            }
+            else if (c > a && c > b && c > d && c > e) {
+                document.write(`<h1>C is bigest </h1>`);
+            }
+            else if (d > a && d > b && d > c && d > e) {
+                document.write(`<h1>D is bigest </h1>`);
+            }
+            else if (e > a && e > b && e > c && e > d) {
+                document.write(`<h1>E is bigest </h1>`);
+            }
+            else {
+                document.write(`<h1>All Are Equal</h1>`);
+            }
+
+        }
+        var a = parseInt(prompt(`Enter The Value Of A:-`));
+        var b = parseInt(prompt(`Enter The Value Of B:-`));
+        var c = parseInt(prompt(`Enter The Value Of C:-`));
+        var d = parseInt(prompt(`Enter The Value Of D:-`));
+        var e = parseInt(prompt(`Enter The Value Of E:-`));
+        ladder(a, b, c, d, e);
+    </script>
+
+</body>
+
+</html>

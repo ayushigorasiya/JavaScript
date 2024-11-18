@@ -1,0 +1,50 @@
+<!-- Write a JavaScript program to create basic calculator using ladder if else. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qa-11</title>
+</head>
+<body>
+    <hr>
+    <hr>
+    <script>
+        var choice = parseInt(prompt("Enter  1 (+) \n Enter  2 (-) \n Enter  3(*) \n Enter  4(/)"))
+        var a = parseInt(prompt(" Addition value of a :- "));
+        var b = parseInt(prompt(" Addition value of b :- "));
+
+        if (choice == 1) {
+            var ans = a + b;
+            document.write(`<h1>Addition a + b =  ${ans} </h1>`);
+            
+        }
+
+        else if (choice == 2) {
+            var ans = a - b;
+            document.write(`<h1>Subtraction a - b = ${ans}</h1>`);
+            
+        }
+
+        else if (choice == 3) {
+            var ans = a * b;
+            document.write(`<h1>Multiplication a * b = ${ans}</h1> `);
+           
+        }
+
+        else if (choice == 4) {
+            var ans = a / b;
+            document.write(`<h1>Division a / b = ${ans}</h1>`);
+            
+        }
+
+        else {
+            document.write(`<h1>Invalid choice plese try later</h1>`);
+            
+        }
+    </script>
+    <hr>
+    <hr>
+</body>
+</html>

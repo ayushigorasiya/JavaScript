@@ -1,0 +1,70 @@
+<!-- .Write a JavaScript program to find which number is greter in 3 numbers using nested if else.(using all function) -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QA-7_2</title>
+</head>
+
+<body>
+    <script>
+        alert(`JavaScript program to find which number is greter in 3 numbers using nested if else.(using all function)`);
+        alert(`Take Nothing Return Something`);
+        // Take Nothing Return Something
+
+        function greter() {
+
+            if (a > b) {
+                if (a > c) {
+                    if (a > d) {
+                        return "A Is Bigest";
+                    }
+                    else {
+                        return "D Is Bigest";
+                    }
+                }
+                else {
+                    if (c > d) {
+                        return "C Is Bigest";
+                    }
+                    else {
+                        return "D Is Bigest";
+                    }
+                }
+            }
+            else {
+
+                if (b > c) {
+                    if (b > d) {
+                        return "B Is Bigest";
+                    }
+                    else {
+                        return "D Is Bigest";
+                    }
+                }
+                else {
+                    if (c > d) {
+                        return "C Is Bigest";
+                    }
+                    else {
+                        return "D Is Bigest";
+                    }
+                }
+            }
+
+
+        }
+        var a = parseInt(prompt(` Enter The Value Of A:-`));
+        var b = parseInt(prompt(` Enter The Value Of B:-`));
+        var c = parseInt(prompt(` Enter The Value Of C:-`));
+        var d = parseInt(prompt(` Enter The Value Of D:-`));
+
+        document.write("<h1>" + greter() + "</h1>");
+    </script>
+
+</body>
+
+</html>

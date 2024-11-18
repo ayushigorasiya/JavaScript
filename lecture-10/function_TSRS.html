@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TSRS</title>
+</head>
+
+<body>
+    <script>
+        alert(`Take Something Return Something`);
+        // Take Something Return Something
+        function voting(age) {
+            if (age >= 18) {
+                document.write(`<h1>:) You Are Eligible For Voting</h1>`);
+            }
+            else {
+                document.write(`<h1> :)You Are Not Eligible For Voting</h1>`);
+            }
+            return age;
+        }
+        var age = parseInt(prompt(`Enter The your Age :-`));
+        voting(age);
+    </script>
+
+</body>
+
+</html>

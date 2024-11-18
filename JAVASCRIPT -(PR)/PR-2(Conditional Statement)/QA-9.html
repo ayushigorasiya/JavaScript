@@ -1,0 +1,107 @@
+<!-- Write a JavaScript program to find max of 5 number using nested if. -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QA-9</title>
+</head>
+
+<body>
+    <hr>
+    <hr>
+    <script>
+
+        var a = parseInt(prompt(` Enter The Value Of A:-`));
+        var b = parseInt(prompt(` Enter The Value Of B:-`));
+        var c = parseInt(prompt(` Enter The Value Of C:-`));
+        var d = parseInt(prompt(` Enter The Value Of D:-`));
+        var e = parseInt(prompt(` Enter The Value Of E:-`));
+
+        if (a > b) {
+            if (a > c) {
+                if (a > d) {
+                    if (a > e) {
+                        document.write(`<h1>A is Bigest</h1>`);
+                    }
+                    else {
+                        document.write(`<h1>E is Bigest</h1>`);
+
+                    }
+                }
+                if (d > e) {
+                    document.write(`<h1>d is Bigest</h1>`);
+                }
+                else {
+                    document.write(`<h1>E is Bigest</h1>`);
+
+                }
+
+            }
+            if (c > d) {
+                if (c > e) {
+                    document.write(`<h1>C is Bigest</h1>`);
+                }
+                else {
+                    document.write(`<h1>E is Bigest</h1>`);
+                }
+            }
+            if (d > e) {
+                document.write(`<h1>d is Bigest</h1>`);
+            }
+            else {
+                document.write(`<h1>E is Bigest</h1>`);
+
+            }
+
+
+
+
+        }
+        else {
+
+            if (b > c) {
+                if (b > d) {
+                    if (b > e) {
+                        document.write(`<h1>B is Bigest</h1>`);
+                    }
+                    else {
+                        document.write(`<h1>E is Bigest</h1>`);
+
+                    }
+                }
+                if (d > e) {
+                    document.write(`<h1>d is Bigest</h1>`);
+                }
+                else {
+                    document.write(`<h1>E is Bigest</h1>`);
+
+                }
+
+            }
+            if (c > d) {
+                if (c > e) {
+                    document.write(`<h1>C is Bigest</h1>`);
+                }
+                else {
+                    document.write(`<h1>E is Bigest</h1>`);
+                }
+            }
+            if (d > e) {
+                document.write(`<h1>D is Bigest</h1>`);
+            }
+            else {
+                document.write(`<h1>E is Bigest</h1>`);
+
+            }
+
+        }
+    </script>
+
+    <hr>
+    <hr>
+</body>
+
+</html>

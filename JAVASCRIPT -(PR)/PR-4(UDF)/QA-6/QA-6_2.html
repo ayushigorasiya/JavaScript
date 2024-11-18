@@ -1,0 +1,35 @@
+<!-- Write a javascript Program to perform a swapping of two variables.(all function use) -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QA-6_2</title>
+</head>
+
+<body>
+    <script>
+         alert("javascript Program to perform a swapping of two variables.(all function use)");
+         alert("Take Something Return Nothing . . .");
+        // Take Something Return Nothing . . .
+        function swapping(a , b) {
+            var swap = a;
+            a = b;
+            b = swap;
+
+
+
+
+            document.write(`<h1>After swapping: A = ${a}, B = ${b}`);
+        }
+        var a = parseInt(prompt(`Enter The Value Of A :-`));
+        var b = parseInt(prompt(`Enter The Value Of B :-`));
+        document.write(`<h1>Before swapping: A = ${a}, B = ${b}`);
+        swapping(a , b);
+    </script>
+
+</body>
+
+</html>

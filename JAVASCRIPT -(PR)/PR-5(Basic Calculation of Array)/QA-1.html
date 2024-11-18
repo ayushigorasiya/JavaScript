@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QA-1</title>
+</head>
+
+<body>
+    <h2>negetive elements in array.</h2>
+    <h4>
+        User Input
+    </h4>
+    <script>
+        var size = parseInt(prompt(`Enter The Element Of Size :-`));
+        var array = [size];
+
+
+
+        for (var i = 0; i < size; i++) {
+            array[i] = parseInt(prompt(`Enter Your Element ${i + 1} :-`));
+
+            document.write(`<h2>${array[i]}</h2>`);
+        }
+
+        document.write(`<h2>Negetive Element in Array</h2>`);
+        for (var i = 0; i < size; i++) {
+            if (array[i] < 0) {
+                document.write(`<h2>${array[i]}</h2>`);
+            }
+        }
+    </script>
+
+</body>
+
+</html>

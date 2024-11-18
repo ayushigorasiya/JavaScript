@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QA-3</title>
+</head>
+
+<body>
+    <h2>minummum number in array.</h2>
+    <h4>
+        User Input
+    </h4>
+    <script>
+        var a = parseInt(prompt(`Enter The Element Of A :-`));
+        var b = parseInt(prompt(`Enter The Element Of B :-`));
+        var c = parseInt(prompt(`Enter The Element Of C :-`));
+        var d = parseInt(prompt(`Enter The Element Of D :-`));
+        var e = parseInt(prompt(`Enter The Element Of E :-`));
+
+
+
+        var array = [a, b, c, d, e];
+
+        if (a < b) {
+            if (a < c) {
+                if (a < d) {
+                    if (a < e) {
+                        document.write(`<h1>This Number A ==> ${a} is Minimmum</h1>`);
+                    }
+                    else {
+                        document.write(`<h1>This Number E ==> ${e} is Minimmum</h1>`);
+                    }
+                }
+                else {
+                    if (d < e) {
+                        document.write(`<h1>This Number D ==> ${d} is Minimmum</h1>`);
+
+                    }
+                    else {
+                        document.write(`<h1>This Number E ==> ${e} is Minimmum</h1>`);
+                    }
+                }
+            }
+            else {
+                if (c < d) {
+                    if (c < e) {
+                        document.write(`<h1>This Number C ==> ${c} is Minimmum</h1>`);
+                    } else {
+                        document.write(`<h1>This Number E ==> ${e} is Minimmum</h1>`);
+
+                    }
+                }
+                else {
+                    if (d < e) {
+                        document.write(`<h1>This Number D ==> ${d} is Minimmum</h1>`);
+
+                    }
+                    else {
+                        document.write(`<h1>This Number E ==> ${e} is Minimmum</h1>`);
+                    }
+                }
+            }
+        }
+        else {
+            if (b < c) {
+                if (b < d) {
+                    if (b < e) {
+                        document.write(`<h1>This Number B ==> ${b} is Minimmum</h1>`);
+                    }
+                    else {
+                        document.write(`<h1>This Number E ==> ${e} is Minimmum</h1>`);
+                    }
+                }
+                else {
+                    if (d < e) {
+                        document.write(`<h1>This Number D ==> ${d} is Minimmum</h1>`);
+
+                    }
+                    else {
+                        document.write(`<h1>This Number E ==> ${e} is Minimmum</h1>`);
+                    }
+                }
+            }
+            else {
+                if (c < d) {
+                    if (c < e) {
+                        document.write(`<h1>This Number C ==> ${c} is Minimmum</h1>`);
+                    }
+                    else {
+                        document.write(`<h1>This Number E ==> ${e} is Minimmum</h1>`);
+
+                    }
+                }
+                else {
+                    if (d < e) {
+                        document.write(`<h1>This Number D ==> ${d} is Minimmum</h1>`);
+
+                    }
+                    else {
+                        document.write(`<h1>This Number E ==> ${e} is Minimmum</h1>`);
+                    }
+                }
+            }
+        }
+
+    </script>
+
+</body>
+
+</html>

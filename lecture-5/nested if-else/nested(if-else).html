@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NESTED IF-ELSE</title>
+</head>
+<body>
+   
+
+    <script>
+
+        var a = parseInt(prompt(` Enter The Value Of A:-`));
+        var b = parseInt(prompt(` Enter The Value Of B:-`));
+        var c = parseInt(prompt(` Enter The Value Of C:-`));
+        var d = parseInt(prompt(` Enter The Value Of D:-`));
+
+        if(a > b){
+            if(a > c){
+                if(a > d){
+                    document.write(`<h1>A is bigest </h1>`);
+                }
+                else{
+                    document.write(`<h1>D is bigest </h1>`);
+                }
+            }
+            else{
+               if(c > d){
+                 document.write(`<h1>C is bigest </h1>`);
+               }
+               else{
+                 document.write(`<h1>D is bigest </h1>`);
+               }
+            }
+            
+
+        }
+        else{
+            if(b > c){
+                if(b > d){
+                    document.write(`<h1>B is bigest </h1>`);
+                }
+                else{
+                    document.write(`<h1>D is bigest </h1>`);
+                }
+            }
+            else{
+                if(c > d){
+                 document.write(`<h1>C is bigest </h1>`);
+               }
+               else{
+                 document.write(`<h1>D is bigest </h1>`);
+               }
+            }
+        }
+    </script>
+    
+</body>
+</html>
