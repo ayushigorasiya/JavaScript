@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Constructor</title>
+</head>
+
+<body>
+    <table align="center" border="1">
+        <thead>
+            <th>
+                <tr>Id</tr>
+                <tr>Name</tr>
+                <tr>Phone</tr>
+            </th>
+        </thead>
+    </table>
+    <script type="text/javascript">
+        class Demo {
+            constructor() {
+                this.a = 10;
+                this.b = 5;
+                this.data = [
+                    { id: 1, name: Jay, phone: 1234 },
+                    { id: 2, name: Ajay, phone: 5678 },
+                    { id: 3, name: Vijay, phone: 9012 }
+                ]
+            }
+            sum() {
+                document.write(`<h1>Sum :- ${this.a + this.b}</h1>`);
+            }
+        }
+        let obj = new Demo; obj.sum();
+    </script>
+</body>
+
+</html>
