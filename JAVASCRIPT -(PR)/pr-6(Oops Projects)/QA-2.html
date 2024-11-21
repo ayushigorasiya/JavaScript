@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank_Balance</title>
+</head>
+<body>
+
+    <script type="text/javascript">
+
+        class BankAccount {
+            constructor(acn, bal) {
+                this.acn = acn;
+                this.bal = bal;
+
+
+            }
+            data() {
+                document.write(`<h2>Account Number :- ${this.acn}</h2>`);
+                document.write(`<h2>Your Balance is ${this.bal}</h2>`);
+
+                 
+            }
+            dipo(amt) {
+                let total = this.bal += amt;
+                document.write(`<h2>Successfully diposited....</h2>`);
+                this.show();
+
+            }
+            withdraw(amt) {
+                if (this.bal >= amt) {
+                    let total = this.bal -= amt;
+                    document.write(`<h2>Successfully Withdraw....</h2>`)
+                    this.show();
+                }
+                else {
+
+                    document.write(`<h2>Insufficient Balance...</h2>`)
+                }
+            }
+            show() {
+                document.write(`<h2>Balance :- ${this.bal}</h2>`)
+            }
+        }
+
+        let bank = new BankAccount(212121212, 1500);
+        bank.data();
+        bank.dipo(500);
+        bank.withdraw(400);
+
+    </script>
+    
+</body>
+</html>
