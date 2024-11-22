@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inharitance</title>
+</head>
+
+<body>
+
+    <script>
+
+        class parent {
+
+            money() {
+                document.write(`<h2>I have More Money</h2>`);
+            }
+
+        }
+
+        class child extends parent {
+
+            pen() {
+                document.write(`<h2>I have Two Pen</h2>`);
+            }
+
+        }
+
+        class superchild extends child {
+
+            book() {
+                document.write(`<h2>I have five Book</h2>`);
+            }
+
+        }
+        let p = new parent;
+        p.money();
+
+
+        let c = new child;
+        c.money();
+        c.pen();
+
+        let s = new superchild;
+        s.money();
+        s.pen();
+        s.book();
+
+    </script>
+
+</body>
+
+</html>

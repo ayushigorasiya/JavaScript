@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>clearInterval_function</title>
+
+
+    <br>
+    <hr>
+    <h2>
+        clearInterval_function
+    </h2>
+
+    <hr>
+    <button onclick="clearTime()" style="margin-bottom:20px ;">Stop</button>
+</head>
+
+
+<body>
+
+    <script>
+
+        let count = 0;
+        let msg = () => {
+
+            count++;
+            console.log(count);
+        }
+
+        let abc = setInterval(msg, 1000)
+        const clearTime = () => {
+            clearInterval(abc);
+        }
+
+
+    </script>
+
+</body>
+
+</html>

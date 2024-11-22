@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>polymorphism</title>
+</head>
+
+<body>
+
+    <script>
+
+        class A {
+            sum() {
+                let a = 10, b = 5;
+                document.write(`<h1>The Class Of  A  Sum Is :- ${a + b}</h1>`);
+            }
+
+
+        }
+
+        class B extends A {
+
+            sum() {
+                let a = 10, b = 5, c = 15;
+                document.write(`<h1>The Class Of  B  Sum Is :- ${a + b + c}</h1>`);
+            }
+        }
+
+        let obj1 = new A;
+        obj1.sum();
+        let obj2 = new B;
+        obj2.sum();
+
+    </script>
+
+</body>
+
+</html>

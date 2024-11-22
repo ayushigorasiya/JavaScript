@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABSTRACTION</title>
+</head>
+
+<body>
+
+    <script>
+
+        class Demo {
+
+            sum() {
+                let a = 10, b = 5;
+                document.write(`<h2>Sum :- ${a + b}</h2>`);
+            }
+
+            min() {
+                let a = 10, b = 5;
+                document.write(`<h2>Min :- ${a - b}</h2>`);
+            }
+
+            mul() {
+                let a = 10, b = 5;
+                document.write(`<h2>Mul :- ${a * b}</h2>`);
+            }
+
+            div() {
+                let a = 10, b = 5;
+                document.write(`<h2>Div :- ${a / b}</h2>`);
+            }
+        }
+
+        function allPrint() {
+            let obj = new Demo;
+            obj.mul();
+            obj.div();
+            obj.min();
+            obj.sum();
+
+        }
+        allPrint();
+
+    </script>
+
+</body>
+
+</html>

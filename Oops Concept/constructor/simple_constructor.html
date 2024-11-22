@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>class and object</title>
+</head>
+
+<body>
+
+    <script>
+
+        class demo {
+            constructor() {
+                this.x = 100;
+            }
+
+            sum() {
+                document.write(`<h2>${this.x}</h2>`);
+                let a = 10, b = 25;
+                document.write(`<h2>The Element Of Sum Is -->  ${a + b}</h2>`);
+            }
+
+            min() {
+                document.write(`<h2>${this.x}</h2>`);
+                let a = 10, b = 25;
+                document.write(`<h2>The Element Of minus Is -->  ${a - b}</h2>`);
+            }
+
+            mul() {
+                document.write(`<h2>${this.x}</h2>`);
+                let a = 10, b = 25;
+                document.write(`<h2>The Element Of multiplication Is -->  ${a * b}</h2>`);
+            }
+
+        }
+
+        let d = new demo;
+        d.sum();
+        d.min();
+        d.mul();
+
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inharitance and constructor</title>
+</head>
+
+<body>
+
+    <script>
+        class Car {
+
+            constructor(car) {
+                this.carname = car
+            }
+            parent() {
+                return `I Have ${this.carname}`;
+            }
+
+        }
+
+        class Model extends Car {
+            constructor(car, model) {
+                super(car);
+                this.model = model
+            }
+            child() {
+                return `I Have ${this.parent()} . Its Model name Is ${this.model}`;
+            }
+        }
+
+        let model = new Model("TATA", "HARRIER");
+        document.write(`<h2>${model.child()}</h2>`);
+    </script>
+
+</body>
+
+</html>
