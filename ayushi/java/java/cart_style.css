@@ -1,0 +1,97 @@
+.card {
+    width: 306px;
+    height: 375.21px;
+    margin-bottom: 4px;
+}
+
+.card img {
+    width: 288.40px;
+    height: 216.01px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.btn1:hover {
+    background-color: #929292 !important;
+    color: #f0f0f0 !important;
+}
+
+.btn1 {
+    transition: 0.5s;
+    color: #f0f0f0;
+    background-color: #5a5a5a;
+}
+
+tr td img {
+    width: 150px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin: 5px;
+}
+
+.card {
+    width: 309px;
+    height: 400px;
+}
+
+.card-body {
+    align-content: center !important;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.card-body .card-title {
+    font-weight: 600;
+}
+
+.card-body .btn {
+    background-color: #929292;
+    color: #f0f0f0;
+
+}
+
+.card-body .btn:hover {
+    color: #5a5a5a;
+    background-color: #f0f0f0;
+    transition: 0.5s;
+}
+
+#product {
+    margin-bottom: 50px !important;
+
+}
+
+.card .img img {
+    width: 288.40px !important;
+    height: 216px !important;
+}
+
+.card .img {
+    width: 288.40px !important;
+    height: 216px !important;
+    overflow: hidden;
+    /* hamesha overflow hiddden main class ne lagavanu hoy che   */
+}
+
+.card .img img:hover {
+    transform: scale(1.3);
+    transition: 1s;
+}
+
+.card .card-body p {
+    font-size: 18px;
+    font-weight: 600;
+    color: #323232c4;
+}
+
+tr td {
+    font-size: 18px;
+    color: black;
+    font-weight: 600;
+    font-family: Georgia, 'Times New Roman', Times, serif
+}
+
+tr td img:hover {
+    transform: scale(1.2);
+    transition: 1s;
+}

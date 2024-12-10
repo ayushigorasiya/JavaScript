@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADD TRO CART</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="cart_style.css">
+</head>
+
+<body style="background-color:#929292 ">
+    <header style="background-color:#f0f0f0; height: 90px;  align-content: center;">
+        <div class="container">
+            <nav class="navbar " style="background-color:#f0f0f0 ;">
+                <div class="container-fluid">
+                    <a class="navbar-brand" style="font-size: 25px; font-weight: 600; color: white;"><img
+                            src="assets/img/per.png" alt=""></a>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <a class=" btn1   nav-link active bg-white  " aria-current="page" href="cart.html"
+                            style="border-radius: 10px; padding: 10px 20px; font-weight: 600; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: black ">Cart</a>
+                    </form>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container ">
+        <h2 align="center" class="mt-5"
+            style="font-weight: 600; font-size: 40px; font-family: Georgia, 'Times New Roman', Times, serif; ">All
+            PERFUMES</h2>
+        <div class="row" id="product">
+
+        </div>
+    </div>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript">
+
+        let product = [
+            {
+                id: 1,
+                name: "DATE Woman Perfume - 100ml",
+                price: 565.00,
+                qty: 1,
+                image: "https://bellavitaorganic.com/cdn/shop/files/1_d5115b80-e607-4477-9205-b78447cd0e10.jpg?v=1714549127&width=300",
+            },
+            {
+                id: 2,
+                name: "CEO Men Intense Perfume - 100ml",
+                price: 849.00,
+                qty: 1,
+                image: "https://bellavitaorganic.com/cdn/shop/files/CEOManIntense-01_c653210f-6d29-4fdf-b34a-1a4863dbc15c.jpg?v=1714548363&width=300",
+            },
+            {
+                id: 3,
+                name: "TAAJ Gold OUD Attar - 12ml",
+                price: 425.00,
+                qty: 1,
+                image: "https://bellavitaorganic.com/cdn/shop/files/Taaj-00.jpg?v=1712321132&width=300",
+            },
+            {
+                id: 4,
+                name: " OCEAN Man Perfume - 100ml",
+                price: 849.00,
+                qty: 1,
+                image: "https://bellavitaorganic.com/cdn/shop/files/Ocean-01_6cd0a2ed-3b3e-462a-a818-c2c2346b30c5.jpg?v=1717665492&width=300",
+            },
+            {
+                id: 5,
+                name: "  Rose Women Perfume - 100ml ",
+                price: 20000,
+                qty: 1,
+                image: "https://bellavitaorganic.com/cdn/shop/files/1_7e632b02-e771-4e33-a651-dfd8030329aa.jpg?v=1720614755&width=300",
+            },
+            {
+                id: 6,
+                name: "BLU Men Perfume - 100ml",
+                price: 799.00,
+                qty: 1,
+                image: "https://bellavitaorganic.com/cdn/shop/files/1_882dadd1-43e2-4c85-a8a6-0da791b34d8f.jpg?v=1714548090&width=300",
+            },
+            {
+                id: 7,
+                name: "G.O.A.T Men Perfume - 100ml ",
+                price: 575.00,
+                qty: 1,
+                image: "https://bellavitaorganic.com/cdn/shop/files/1_d6b8844f-c519-4e09-9d55-84696a702ce3.jpg?v=1714549698&width=300",
+            },
+            {
+                id: 8,
+                name: "IMPACT Men Perfume - 100ml ",
+                price: 515.00,
+                qty: 1,
+                image: "https://bellavitaorganic.com/cdn/shop/files/1_363a09fe-797f-4f61-b44d-cbfe73818d95.jpg?v=1714553819&width=300",
+            },
+        ];
+
+        const getProduct = () => {
+            let tbl = "";
+            product.map((val, index) => {
+                tbl += `
+                        <div class="col-lg-3 mt-5">
+                           <div class="card p-2">
+                              <div class="img">
+                                <img src="${val.image}" class="card-img" alt="...">
+                                </div>
+                             <div class="card-body">
+                               <h5 class="card-title">${val.name}</h5>
+                               <p>Price : ${val.price} </p>
+                               <button  onclick="addToCart(${val.id})"   class="btn " style=" font-weight:600;">Add To Cart</button>
+                             </div>
+                           </div>
+                         </div>
+        
+                        `
+            })
+            document.getElementById('product').innerHTML = tbl;
+        }
+        getProduct();
+
+        let cart = [];
+        const addToCart = (pid) => {
+            let allcart = JSON.parse(localStorage.getItem('cart')) ? JSON.parse(localStorage.getItem('cart')) : []
+            let dup = allcart.find(val => val.id == pid);
+            if (dup) {
+                alert("Already Exists Your Cart");
+                return false;
+            }
+
+            product.map((val, i) => {
+                if (val.id == pid) {
+                    if (localStorage.getItem('cart') === null || localStorage.getItem('cart') === undefined) {
+                        cart.push(val);
+                        localStorage.setItem('cart', JSON.stringify(cart))
+                    }
+                    else {
+                        let oldproductdata = JSON.parse(localStorage.getItem('cart'));
+                        oldproductdata.push(val);
+                        localStorage.setItem('cart', JSON.stringify(oldproductdata))
+                    }
+                }
+            })
+            alert("Product Successfully Add");
+        }
+    </script>
+</body>
+
+</html>
+
+</banner>
+
+<script src="assets/js/product.js" type="text/javascript"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #929292;
+}
+
+header {
+    background-color: #f0f0f0;
+    padding: 10px 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+header .name {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .icon {
+    display: flex;
+    align-items: center;
+}
+
+header .icon img {
+    width: 120px;
+    height: 80px;
+    margin-right: 10px;
+}
+
+header .icon h1 {
+    font-size: 40px;
+    color: #000;
+    font-family: popins;
+    margin: 0;
+}
+
+header .menus {
+    display: flex;
+}
+
+header .menus a img {
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+}
+
+.container {
+    padding-top: 50px;
+}
+
+.container h2 {
+    font-size: 30px;
+    padding-bottom: 10px;
+    font-family: cursive;
+    color: black;
+    font-weight: 500;
+}
+
+.card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.5);
+}
+
+.card-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.card-text {
+    color: #666;
+}
+
+.card-img-top {
+    border-radius: 8px 8px 0 0;
+}
+
+.card-img {
+    height: 400px;
+    width: 100px;
+    object-fit: cover;
+
+}
+
+.cart img:hover {
+    transform: scale(1.08);
+    transition: 0.5s;
+    overflow: hidden;
+}
+
+.card-heighlight {
+    color: #000;
+}
+
+.btn-primary {
+    background-color: #929292;
+    border-color: #929292;
+}
+
+.btn-primary:hover {
+    background-color: #605f5f;
+    border-color: #605f5f;
+}
